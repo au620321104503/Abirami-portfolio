@@ -1,0 +1,220 @@
+ /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f1624;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navbar Styling */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 8%;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1, h2 {
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+ .typing {
+    color: cyan;
+    font-weight: bold;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: cyan;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, cyan, magenta);
+    padding: 5px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: cyan;
+}
+
+/* About Section */
+.about {
+    padding: 50px 8%;
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 8%;
+    background-color: #0f1624;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service-box {
+    background-color: #111827;
+    color: white;
+    padding: 20px;
+
+
+
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-box i {
+    font-size: 40px;
+    color: cyan;
+    margin-bottom: 15px;
+}
+
+.service-box:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 8%;
+    background-color: #111827;
+    color: white;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact input {
+    height: 40px;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+.contact .btn {
+    width: 80%;
+    max-width: 500px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .profile-pic {
+        margin-top: 20px;
+    }
+}
